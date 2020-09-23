@@ -14,6 +14,7 @@ function displayResults(responseJson) {
   //loop through results
   let picResults = responseJson.message
   let display = getImages(picResults); 
+  $('.results').removeClass('hidden');
   $('.image-content-multiple').html(display);
 }
 
